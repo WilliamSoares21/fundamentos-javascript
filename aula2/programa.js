@@ -48,21 +48,47 @@ function criar_nome_completo(nome, sobrenome, sexo) {
 
 }
 
-const nomeCompleto = criar_nome_completo("William", "Soares", "m");
+const nomeCompleto = criar_nome_completo("William", "Soares", "M");
 const nomeCompleto2 = criar_nome_completo("Ana", "Catarina", "F");
-
-
 
 dizer_ola(nomeCompleto);
 dizer_ola(nomeCompleto2);
 
+const numeros = [1, 2, 3, 4, 5];
 
+numeros.forEach(function (numero) {
+  console.log(numero);
+})
 
+const letras = ["A", "B", "C", "D", "E"];
 
+letras.forEach(function (letra, indice) {
+  console.log(`${indice} : ${letra}`)
+})
 
+const tarefas = [
+  {
+    id: 1,
+    texto: "Estudar",
+    completo: false,
+  },
+  {
+    id: 2,
+    texto: "Trabalhar",
+    completo: false,
+  },
+  {
+    id: 3,
+    texto: "Limpar a casa",
+    completo: true,
+  }
+]
 
+tarefas.forEach(function (tarefa, indice, minhasTarefas) {
+  console.log(`${indice + 1}: ${tarefa.texto}`);
+  console.log(minhasTarefas);
 
-
+})
 
 
 
