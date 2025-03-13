@@ -56,6 +56,11 @@ console.log(tarefa[1].texto);// acessando uma propiedade de um elemento
 console.log(JSON.stringify(tarefa));
 console.log(JSON.stringify(pessoa));
 
+for (let i = 0; i < tarefa.length; i++) { // Loop for tradicional: itera sobre o array 'tarefa' usando um índice 'i'
+  console.log(`Tarefa ${i + 1}: ${tarefa[i].texto}`); // Exibe o número da tarefa (i + 1) e o texto da tarefa no console
+}
 
-
+for (let tarefas of tarefa) { // Loop for...of: itera diretamente sobre os elementos do array 'tarefa'
+  console.log("Tarefa " + (tarefa.indexOf(tarefas) + 1) + " : " + tarefas.texto); // Exibe o número da tarefa e o texto da tarefa no console
+}
 

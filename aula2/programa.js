@@ -22,6 +22,64 @@ console.log(verdade)
 console.log(nulo)
 
 
+function dizer_ola(nome = "Fulano") {
+  console.log("Olá " + nome);
+}
+
+// Funções setas
+const dizer_oi = () => console.log("oi");
+
+
+
+function criar_nome_completo(nome, sobrenome, sexo) {
+
+  sexo = sexo.toUpperCase();
+
+  if (sexo == "M") {
+    return `Sr. ${nome} ${sobrenome}`;
+
+  } else if (sexo == "F") {
+    return `Sra. ${nome} ${sobrenome}`;
+
+  } else {
+    return `${nome} ${sobrenome}`;
+
+  }
+
+}
+
+const nomeCompleto = criar_nome_completo("William", "Soares", "m");
+const nomeCompleto2 = criar_nome_completo("Ana", "Catarina", "F");
+
+
+
+dizer_ola(nomeCompleto);
+dizer_ola(nomeCompleto2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
